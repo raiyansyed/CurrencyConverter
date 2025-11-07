@@ -15,7 +15,9 @@ export default function Boxes({
                         {displayTag}
                     </label>
                     <input 
-                        type="number" 
+                        type="text"
+                        inputMode="numeric"
+                        pattern="[0-9]*"
                         placeholder='0'
                         value={amount}
                         disabled={inputDisabled}
