@@ -60,7 +60,7 @@ function App() {
             <Boxes 
               displayTag='To' 
               inputDisabled={true}
-              amount={convertedAmount}
+              amount={convertedAmount == 0 ? 0 : convertedAmount.toFixed(2)}
               currencyOptions={options}
               selectCurrency={to}
               onCurrencyChange={(currency) => setTo(currency)}
